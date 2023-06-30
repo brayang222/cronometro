@@ -8,7 +8,7 @@ let intervTiempo;
 let estadoCronometro = 'pausado';
 
 function actualizarCronometro() {
-
+ 
   segundos++;
 
   if (segundos / 60 === 1) {
@@ -66,3 +66,8 @@ btnReiniciar.addEventListener('click', function(){
    }
 
 })
+
+
+
+// divisores
+

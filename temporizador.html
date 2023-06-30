@@ -33,9 +33,36 @@
   </header>
   <main class="contenedor-principal">
     <div class="contenedor-interno">
+      <div class="botones-up">
+        <button class="horas up hidden">
+          <i class="fa-solid fa-caret-up"></i>
+         </button>
+        <button class="minutos up hidden">
+          <i class="fa-solid fa-caret-up"></i>
+         </button>
+        <button class="segundos up hidden">
+          <i class="fa-solid fa-caret-up"></i>
+         </button>
+        </div>
     <div id="cronometro">
-      00:00:00
+      <div class="horas">00</div>
+      :
+      <div class="minutos">00</div>
+      :
+      <div class="segundos"><span>00</span></div>
     </div>
+    <div class="botones-up">
+      <button class=" down hidden">
+        <i class="fa-solid fa-caret-down"></i>
+       </button>
+      <button class=" down hidden">
+        <i class="fa-solid fa-caret-down"></i>
+       </button>
+      <button class=" down hidden">
+        <i class="fa-solid fa-caret-down"></i>
+       </button>
+      </div>
+    
     <div class="contenedor-botones">
       <button id="boton-inicio-pausa" class="boton iniciar">
         <i class="fa-solid fa-play"></i>
@@ -43,10 +70,15 @@
       <button id="boton-reiniciar" class="boton">
         <i class="fa-solid fa-arrow-rotate-left"></i>
       </button>
+      <button id="boton-ingresar" class="boton ingresar">
+        <i class="fa-solid fa-hourglass"></i>
+      </button>
     </div>
+      
+    
   </div>
   </main>
 
-  <script src="app.js"></script>
+  <script src="temp.js"></script>
 </body>
 </html>
