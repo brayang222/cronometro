@@ -1,5 +1,7 @@
-const agregarTiempo = document.getElementById('boton-ingresar')
-const hidden = document.getElementsByClassName('hidden')
+const agregarTiempo = document.getElementById('boton-ingresar');
+const hiddenup = document.getElementsByClassName('botones-up')[0];
+const hiddend = document.getElementsByClassName('botones-up')[1];
+
 
 const up = document.getElementsByClassName('up')[2];
 const down = document.getElementsByClassName('down')[2];
@@ -12,7 +14,8 @@ down.addEventListener('click', reducirCronometro)
 up.addEventListener('click', actualizarCronometro)
 
 agregarTiempo.addEventListener('click', () => {
-  
+  hiddenup.classList.toggle('hidden');
+  hiddend.classList.toggle('hidden');
 })
 
 mins.addEventListener('click', () => {
